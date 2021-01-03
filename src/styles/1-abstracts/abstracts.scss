@@ -1,0 +1,54 @@
+:root {
+  //colors
+  --color-primary: #414141;
+  --color-secondary: #1d04f7;
+	--color-tertiary: #66bb6a;
+	
+  --color-offwhite: #F5F5F7;
+  --white: #fff;
+  --black: #242424;
+
+  // shadows
+  --shadow-light: 4px 12px 40px 6px rgba(0, 0, 0, .04);
+  --shadow-md: 4px 12px 40px 6px rgba(0, 0, 0, .08);
+
+  // fonts
+  --font-ibm: 'IBM Plex Sans', sans-serif;
+}
+
+// mixins
+@mixin breakpoint($class) {
+  @if $class==xs {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+
+  @else if $class==sm {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @else if $class==md {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $class==lg {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $class==xl {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
