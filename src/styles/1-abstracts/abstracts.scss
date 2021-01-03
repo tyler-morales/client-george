@@ -4,9 +4,11 @@
   --color-secondary: #1d04f7;
 	--color-tertiary: #66bb6a;
 	
-  --color-offwhite: #F5F5F7;
+  --offwhite: #F5F5F7;
   --white: #fff;
-  --black: #242424;
+	--black: #242424;
+	
+	--bg-color: var(--offwhite);
 
   // shadows
   --shadow-light: 4px 12px 40px 6px rgba(0, 0, 0, .04);
