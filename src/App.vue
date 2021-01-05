@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-    <div class="main-ctnr">
-      hello world
-    </div>
+    <NavBar />
+    <div class="main-ctnr"></div>
   </div>
 </template>
 
 <script>
+import NavBar from '@/components/NavBar'
+
 export default {
   name: 'App',
-  components: {},
+  components: { NavBar },
 }
 </script>
 
