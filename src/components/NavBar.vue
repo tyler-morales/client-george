@@ -53,8 +53,8 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  background-color: var(--color-primary);
   display: flex;
+  background-color: var(--color-primary);
 
   @include breakpoint(sm) {
     display: block;
@@ -62,12 +62,12 @@ nav {
 }
 
 .nav {
-  color: var(--white);
-  padding: 1em 2em;
-  font-weight: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--white);
+  padding: 1em 2em;
+  font-weight: 100;
 
   @include breakpoint(sm) {
     width: 100%;
