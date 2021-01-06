@@ -2,7 +2,7 @@
   <nav>
     <div class="nav-container">
       <div class="nav">
-        <a href="#"><img class="logo" :src="logo" alt="Logo"/></a>
+        <a href="#"><span class="logo">George Perez</span></a>
         <button @click="isOpen = !isOpen">
           <svg
             v-if="!isOpen"
@@ -67,14 +67,14 @@ nav {
   font-weight: 100;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @include breakpoint(sm) {
     width: 100%;
   }
 
   .logo {
-    width: 50px;
-    height: auto;
+    font-weight: 700;
   }
 
   .menu {
