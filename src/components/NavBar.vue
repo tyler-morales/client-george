@@ -39,12 +39,9 @@
 </template>
 
 <script>
-import logo from '../assets/popye-icon.svg'
-
 export default {
   data() {
     return {
-      logo: logo,
       isOpen: false,
     }
   },
