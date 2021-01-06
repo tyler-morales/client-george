@@ -1,19 +1,24 @@
 <template>
   <div id="app">
     <NavBar />
-    <Hero :hero="hero" />
+    <main>
+      <Hero :hero="hero" />
+      <History :history="history" />
+    </main>
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
+import History from '@/components/History'
 
 export default {
   name: 'App',
   components: {
     NavBar,
     Hero,
+    History,
   },
   data() {
     return {
@@ -33,5 +38,9 @@ export default {
 
 <style lang="scss">
 #app {
+  main {
+    display: grid;
+    gap: 100px;
+  }
 }
 </style>
