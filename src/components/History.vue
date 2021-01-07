@@ -1,6 +1,6 @@
 <template>
   <div class="history container">
-    <h3>Timeline</h3>
+    <h2>Career History</h2>
     <section class="timeline">
       <ul>
         <li v-for="(info, index) in timeline_data" v-bind:key="index">
@@ -24,7 +24,7 @@ export default {
       timeline_data: [
         {
           position: 'Oberline College',
-          // yearStart: '2009',
+          yearStart: '1979',
           yearEnd: '1983',
         },
         {
@@ -34,9 +34,39 @@ export default {
         },
         {
           position: 'Associate, Litigation, Kasdorf, Lewis, Swietlik',
-          description: 'Sobrecary St, Tagum City',
+          // description: 'Sobrecary St, Tagum City',
           yearStart: '1987',
           yearEnd: '1989',
+        },
+        {
+          position: 'Law Clerk, Judge Susan Steingass, Circuit Court',
+          yearStart: '1989',
+          yearEnd: '1990',
+        },
+        {
+          position: 'Immigration Attorney Centro Legal',
+          yearStart: '1991',
+          yearEnd: '1992',
+        },
+        {
+          position: 'U.S. Tax Attorney, Department of the Treasury',
+          yearStart: '1992',
+          yearEnd: '1995',
+        },
+        {
+          position: 'Judge, Minnesota Tax Court',
+          yearStart: '1995',
+          yearEnd: '1997',
+        },
+        {
+          position: 'Chief Judge, Minnesota Tax Court',
+          yearStart: '1997',
+          yearEnd: '2001',
+        },
+        {
+          position: 'Chief Judge, Minnesota Tax Court',
+          yearStart: '2001',
+          yearEnd: '2013',
         },
       ],
     }
@@ -50,8 +80,8 @@ $dark-blue: #2e4a62;
 $light-blue: #ffda29;
 
 .history {
-  justify-self: start;
-  width: 100%;
+  justify-self: center;
+  max-width: max-content;
 }
 
 @mixin clearfix {
