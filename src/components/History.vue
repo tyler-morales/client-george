@@ -1,6 +1,7 @@
 <template>
   <div class="history container">
     <h2>Career History</h2>
+    <hr />
     <section class="timeline">
       <ul>
         <li v-for="(info, index) in timeline_data" v-bind:key="index">
