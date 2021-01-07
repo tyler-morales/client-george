@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <NavBar />
-    <main>
       <Hero :hero="hero" />
+    <main>
       <History :history="history" />
       <Awards :awards="awards" />
     </main>
