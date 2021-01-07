@@ -5,6 +5,7 @@
     <main>
       <History :history="history" />
       <Awards :awards="awards" />
+      <Quote :quote="quote" />
     </main>
   </div>
 </template>
@@ -14,6 +15,7 @@ import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import History from '@/components/History'
 import Awards from '@/components/Awards'
+import Quote from '@/components/Quote'
 
 export default {
   name: 'App',
@@ -22,6 +24,7 @@ export default {
     Hero,
     History,
     Awards,
+    Quote
   },
   data() {
     return {
@@ -66,6 +69,10 @@ export default {
           'International Law Review',
         ],
       },
+      quote:{
+        author: 'Mark Twain',
+        quote: 'Good friends, good books, and a sleepy conscience: this is the ideal life.'
+      }
     }
   },
 }
