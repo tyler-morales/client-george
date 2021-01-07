@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <NavBar />
-      <Hero :hero="hero" />
+    <Hero :hero="hero" />
     <main>
       <History :history="history" />
       <Awards :awards="awards" />
       <Quote :quote="quote" />
+      <Stats :stats="stats" />
     </main>
   </div>
 </template>
@@ -16,6 +17,7 @@ import Hero from '@/components/Hero'
 import History from '@/components/History'
 import Awards from '@/components/Awards'
 import Quote from '@/components/Quote'
+import Stats from '@/components/Stats'
 
 export default {
   name: 'App',
@@ -24,7 +26,8 @@ export default {
     Hero,
     History,
     Awards,
-    Quote
+    Quote,
+    Stats,
   },
   data() {
     return {
@@ -69,10 +72,32 @@ export default {
           'International Law Review',
         ],
       },
-      quote:{
+      quote: {
         author: 'Mark Twain',
-        quote: 'Good friends, good books, and a sleepy conscience: this is the ideal life.'
-      }
+        quote:
+          'Good friends, good books, and a sleepy conscience: this is the ideal life.',
+      },
+      stats: {
+        statList: [
+          {
+            number: '100+',
+            name: 'Talks/ Presentations',
+          },
+          {
+            number: '30',
+            name: 'Years in Law',
+          },
+          {
+            number: '17',
+            name: 'Years as Chief Judge',
+          },
+          {
+            number: '358',
+            name: 'Court Cases',
+          },
+        ],
+        backgroundImage: require('../src/assets/courthouse.jpg'),
+      },
     }
   },
 }
