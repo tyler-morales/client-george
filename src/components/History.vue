@@ -14,11 +14,20 @@
         </li>
       </ul>
     </section>
+
+    <!-- Court Case Btn -->
+    <div class="court-cases">
+      <a :href="history.link" target="_blank">Court Cases</a>
+      <span>View all court cases from the MN. tax court</span>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    history: { type: Object, required: true },
+  },
   data: () => {
     return {
       timeline_data: [
@@ -75,6 +84,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.court-cases {
+  margin: 0 auto;
+  text-align: center;
+
+  a {
+    font-size: 18px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-light);
+    border: 3px solid white;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(3px);
+    }
+  }
+  span {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(112, 112, 112);
+  }
+}
+
 $font-color: var(--color-primary);
 $dark-blue: #2e4a62;
 $light-blue: #ffda29;

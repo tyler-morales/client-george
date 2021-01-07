@@ -31,6 +31,10 @@ export default {
         image: require('../src/assets/hero.jpg'),
         // webp: require('../assets/images/iss_tracker/thumbnail.webp'),
       },
+      history: {
+        link:
+          'https://mn.gov/tax-court/search/?query=george+author%3A%22perez%22+&v%3Asources=mn-tax-court-live&date=&binning-state=&qt=george&author=perez&start-date=&end-date=&sortby=#',
+      },
     }
   },
 }
