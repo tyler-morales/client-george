@@ -4,6 +4,7 @@
     <main>
       <Hero :hero="hero" />
       <History :history="history" />
+      <Awards :awards="awards" />
     </main>
   </div>
 </template>
@@ -12,6 +13,7 @@
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import History from '@/components/History'
+import Awards from '@/components/Awards'
 
 export default {
   name: 'App',
@@ -19,6 +21,7 @@ export default {
     NavBar,
     Hero,
     History,
+    Awards,
   },
   data() {
     return {
@@ -35,6 +38,34 @@ export default {
         link:
           'https://mn.gov/tax-court/search/?query=george+author%3A%22perez%22+&v%3Asources=mn-tax-court-live&date=&binning-state=&qt=george&author=perez&start-date=&end-date=&sortby=#',
       },
+      awards: {
+        first: {
+          name: 'National Tax Judge of the Year',
+          year: '2003',
+        },
+        second: {
+          name: 'Certificate of Commendation | Governor Ventura',
+          year: '2002',
+        },
+        third: {
+          name: 'Service Award | Minnesota Hispanic Bar Association',
+          year: '2003',
+        },
+        list: [
+          'Certificate of Commendation, Governor Carlson, 1998',
+          'Outstanding Mentor of the Year Award, Ramsey County Bar Association, 1999',
+          'Outstanding Leadership and Service Award, Minnesota Hispanic Bar Association, 1998',
+          'Outstanding Service to Students Award, Hamline University School of Law',
+          'Outstanding Leadership and Service Award, Minnesota Hispanic Bar Association, 1998',
+          'Outstanding Service, Urban Youth Intern Initiative Program',
+          'International Moot Court',
+          'President’s Award, Minnesota State Bar Association, 2006',
+          'President’s Award, Minnesota State Bar Association, 2003',
+          'Volunteer Award, Minnesota State Bar Association, 2000',
+          'Wiggins Award, University of Wisconsin Law School',
+          'International Law Review',
+        ],
+      },
     }
   },
 }
@@ -44,7 +75,11 @@ export default {
 #app {
   main {
     display: grid;
-    gap: 100px;
+    gap: 200px;
+
+    @include breakpoint(sm) {
+      gap: 100px;
+    }
   }
 }
 </style>
