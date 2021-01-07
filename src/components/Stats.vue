@@ -40,6 +40,7 @@ export default {
   h2 {
     max-width: 1100px;
     margin: calc(12px + 1.05vw) auto;
+    color: white;
   }
 
   .stat-box {
