@@ -24,7 +24,7 @@ export default {
 .hero {
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 90vh;
   gap: 100px;
   grid-template-columns: 2fr 1fr;
 

@@ -119,6 +119,7 @@ $light-blue: #ffda29;
 .history {
   justify-self: center;
   max-width: max-content;
+  margin-top: 100px;
 }
 
 @mixin clearfix {
