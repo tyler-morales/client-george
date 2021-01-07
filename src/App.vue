@@ -1,19 +1,24 @@
 <template>
   <div id="app">
     <NavBar />
-    <Hero :hero="hero" />
+    <main>
+      <Hero :hero="hero" />
+      <History :history="history" />
+    </main>
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
+import History from '@/components/History'
 
 export default {
   name: 'App',
   components: {
     NavBar,
     Hero,
+    History,
   },
   data() {
     return {
@@ -26,6 +31,10 @@ export default {
         image: require('../src/assets/hero.jpg'),
         // webp: require('../assets/images/iss_tracker/thumbnail.webp'),
       },
+      history: {
+        link:
+          'https://mn.gov/tax-court/search/?query=george+author%3A%22perez%22+&v%3Asources=mn-tax-court-live&date=&binning-state=&qt=george&author=perez&start-date=&end-date=&sortby=#',
+      },
     }
   },
 }
@@ -33,5 +42,9 @@ export default {
 
 <style lang="scss">
 #app {
+  main {
+    display: grid;
+    gap: 100px;
+  }
 }
 </style>
