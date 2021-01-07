@@ -3,10 +3,14 @@
     <NavBar />
     <Hero :hero="hero" />
     <main>
-      <History :history="history" />
-      <Awards :awards="awards" />
-      <Quote :quote="quote" />
-      <Stats :stats="stats" />
+      <div class="gap">
+        <History :history="history" />
+        <Awards :awards="awards" />
+      </div>
+      <div class="no-gap">
+        <Quote :quote="quote" />
+        <Stats :stats="stats" />
+      </div>
     </main>
   </div>
 </template>
@@ -105,12 +109,20 @@ export default {
 
 <style lang="scss">
 #app {
-  main {
+  .gap {
     display: grid;
     gap: 200px;
 
     @include breakpoint(sm) {
       gap: 100px;
+    }
+  }
+
+  .no-gap {
+    margin: 200px 0;
+
+    @include breakpoint(sm) {
+      margin: 100px 0;
     }
   }
 }
