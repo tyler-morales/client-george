@@ -9,8 +9,8 @@
           <div>{{ info.position }}</div>
           <div>{{ info.description }}</div>
           <div class="year">
-            <span>{{ info.yearEnd }}</span>
             <span>{{ info.yearStart }}</span>
+            <span>{{ info.yearEnd }}</span>
           </div>
         </li>
       </ul>
