@@ -13,6 +13,7 @@
       </div>
       <div class="gap">
         <Interests :interests="interests" />
+        <Footer :footer="footer" />
       </div>
     </main>
   </div>
@@ -26,6 +27,7 @@ import Awards from '@/components/Awards'
 import Quote from '@/components/Quote'
 import Stats from '@/components/Stats'
 import Interests from '@/components/Interests'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
@@ -37,6 +39,7 @@ export default {
     Quote,
     Stats,
     Interests,
+    Footer
   },
   data() {
     return {
