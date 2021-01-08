@@ -11,6 +11,9 @@
         <Quote :quote="quote" />
         <Stats :stats="stats" />
       </div>
+      <div class="gap">
+        <Interests :interests="interests" />
+      </div>
     </main>
   </div>
 </template>
@@ -22,6 +25,7 @@ import History from '@/components/History'
 import Awards from '@/components/Awards'
 import Quote from '@/components/Quote'
 import Stats from '@/components/Stats'
+import Interests from '@/components/Interests'
 
 export default {
   name: 'App',
@@ -32,6 +36,7 @@ export default {
     Awards,
     Quote,
     Stats,
+    Interests,
   },
   data() {
     return {
@@ -101,6 +106,25 @@ export default {
           },
         ],
         backgroundImage: require('../src/assets/courthouse.jpg'),
+      },
+      interests: {
+        interestList: [
+          {
+            name: 'Golf',
+            description: 'I like golf and to golf is to like me!',
+            image: require('../src/assets/hero.jpg'),
+          },
+          {
+            name: 'ABA Conferences',
+            description: 'I like golf and to golf is to like me!',
+            image: require('../src/assets/hero.jpg'),
+          },
+          {
+            name: 'Life Long Learning',
+            description: 'I like golf and to golf is to like me!',
+            image: require('../src/assets/hero.jpg'),
+          },
+        ],
       },
     }
   },
