@@ -1,11 +1,5 @@
 <template>
-  <div
-    class="card-wrap"
-    @mousemove="handleMouseMove"
-    @mouseenter="handleMouseEnter"
-    @mouseleave="handleMouseLeave"
-    ref="card"
-  >
+  <div class="card-wrap" ref="card">
     <div class="card" :style="cardStyle">
       <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
       <div class="card-info">
@@ -18,58 +12,12 @@
 
 <script>
 export default {
-  mounted() {
-    this.width = this.$refs.card.offsetWidth
-    this.height = this.$refs.card.offsetHeight
-  },
   props: ['dataImage'],
-  data: () => ({
-    width: 0,
-    height: 0,
-    mouseX: 0,
-    mouseY: 0,
-    mouseLeaveDelay: null,
-  }),
   computed: {
-    mousePX() {
-      return this.mouseX / this.width
-    },
-    mousePY() {
-      return this.mouseY / this.height
-    },
-    // cardStyle() {
-    //   const rX = this.mousePX * 30
-    //   const rY = this.mousePY * -30
-    //   return {
-    //     transform: `rotateY(${rX}deg) rotateX(${rY}deg)`,
-    //   }
-    // },
-    // cardBgTransform() {
-    //   const tX = this.mousePX * -40
-    //   const tY = this.mousePY * -40
-    //   return {
-    //     transform: `translateX(${tX}px) translateY(${tY}px)`,
-    //   }
-    // },
     cardBgImage() {
       return {
         backgroundImage: `url(${this.dataImage})`,
       }
-    },
-  },
-  methods: {
-    handleMouseMove(e) {
-      this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2
-      this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2
-    },
-    handleMouseEnter() {
-      clearTimeout(this.mouseLeaveDelay)
-    },
-    handleMouseLeave() {
-      this.mouseLeaveDelay = setTimeout(() => {
-        this.mouseX = 0
-        this.mouseY = 0
-      }, 1000)
     },
   },
 }
@@ -96,6 +44,15 @@ p + p {
 }
 
 .card-wrap {
+  @media (hover: none) {
+    .card-info {
+      transform: translateY(0);
+    }
+    .card-info p {
+      opacity: 1;
+    }
+  }
+
   &:hover {
     .card-info {
       transform: translateY(0);
@@ -138,8 +95,6 @@ p + p {
 .card-bg {
   opacity: 0.5;
   position: absolute;
-  // top: -20px;
-  // left: -20px;
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -164,10 +119,10 @@ p + p {
     transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  * {
-    position: relative;
-    z-index: 1;
-  }
+  // * {
+  //   position: relative;
+  //   z-index: 1;
+  // }
 
   &:after {
     content: '';
