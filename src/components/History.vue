@@ -107,6 +107,10 @@ export default {
       box-shadow: var(--shadow-md);
       transform: translateY(3px);
     }
+
+    &:focus {
+      border: 2px solid var(--color-primary);
+    }
   }
   span {
     display: block;

@@ -135,8 +135,8 @@ export default {
     margin: 0 auto;
     font-size: 16px;
 
-    &:hover {
-      box-shadow: var(--shadow-md);
+    &:focus {
+      border: 2px solid var(--color-primary);
     }
   }
 }
