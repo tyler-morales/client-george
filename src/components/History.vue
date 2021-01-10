@@ -1,10 +1,14 @@
 <template>
   <div id="history" class="history container">
-    <h2>Career History</h2>
-    <hr />
+    <h2 data-aos="fade-up">Career History</h2>
+    <hr data-aos="fade-up" />
     <section class="timeline">
       <ul>
-        <li v-for="(info, index) in timeline_data" v-bind:key="index">
+        <li
+          v-for="(info, index) in timeline_data"
+          v-bind:key="index"
+          data-aos="fade-up"
+        >
           <span></span>
           <div>{{ info.position }}</div>
           <div>{{ info.description }}</div>
@@ -17,7 +21,7 @@
     </section>
 
     <!-- Court Case Btn -->
-    <div class="court-cases">
+    <div class="court-cases" data-aos="fade-up">
       <a :href="history.link" target="_blank">Court Cases</a>
       <span>View all court cases from the MN. tax court</span>
     </div>

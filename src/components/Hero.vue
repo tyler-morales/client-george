@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="hero container">
+  <div id="home" class="hero container" data-aos="fade-up">
     <div class="hero__text">
       <span class="hero__text--title">{{ hero.title }}</span>
       <h1 class="hero__text--name">{{ hero.name }}</h1>

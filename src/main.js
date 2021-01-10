@@ -6,7 +6,10 @@ Vue.config.productionTip = false
 
 new Vue({
   created() {
-    AOS.init()
+    AOS.init({
+      duration: 1000,
+      once: true
+    })
   },
   render: h => h(App),
 }).$mount('#app')

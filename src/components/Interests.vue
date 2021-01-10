@@ -1,5 +1,5 @@
 <template>
-  <div id="interests" class="interests container">
+  <div id="interests" class="interests container" data-aos="fade-up">
     <h2>Interests</h2>
     <hr />
     <!-- Card container -->

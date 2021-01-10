@@ -1,9 +1,9 @@
 <template>
   <div id="awards" class="awards container">
-    <h2>Awards</h2>
-    <hr />
+    <h2 data-aos="fade-up">Awards</h2>
+    <hr data-aos="fade-up" />
     <section>
-      <div class="top-awards">
+      <div class="top-awards" data-aos="fade-up">
         <div class="top-awards__second">
           <span class="name">{{ awards.second.name }}</span>
           <span class="year">{{ awards.second.year }}</span>
@@ -19,13 +19,19 @@
       </div>
 
       <!-- Extra Awards -->
-      <div class="extra-awards">
+      <div class="extra-awards" data-aos="fade-up">
         <ul v-bind:class="{ 'is-collapsed': collapsed }">
-          <li v-for="(award, index) in awards.list" v-bind:key="index">
+          <li
+            v-for="(award, index) in awards.list"
+            v-bind:key="index"
+            data-aos="fade-up"
+          >
             {{ award }}
           </li>
         </ul>
-        <button v-on:click="collapsed = !collapsed"> {{ collapsed ? 'Show More' : 'Show Less' }}</button>
+        <button v-on:click="collapsed = !collapsed">
+          {{ collapsed ? 'Show More' : 'Show Less' }}
+        </button>
       </div>
     </section>
   </div>
