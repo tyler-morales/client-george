@@ -1,5 +1,5 @@
 <template>
-  <div class="awards container">
+  <div id="awards" class="awards container">
     <h2>Awards</h2>
     <hr />
     <section>

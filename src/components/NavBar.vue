@@ -29,10 +29,9 @@
         </button>
       </div>
       <div :class="isOpen ? 'show' : 'hide'" class="nav__links">
-        <a href="#">About</a>
-        <a href="#">Awards</a>
-        <a href="#">Career History</a>
-        <a href="#">Interests</a>
+        <a href="#history">Career History</a>
+        <a href="#awards">Awards</a>
+        <a href="#interests">Interests</a>
       </div>
     </div>
   </nav>

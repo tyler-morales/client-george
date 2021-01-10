@@ -1,5 +1,5 @@
 <template>
-  <div class="interests container">
+  <div id="interests" class="interests container">
     <h2>Interests</h2>
     <hr />
     <!-- Card container -->

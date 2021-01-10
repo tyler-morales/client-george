@@ -1,5 +1,5 @@
 <template>
-  <div class="history container">
+  <div id="history" class="history container">
     <h2>Career History</h2>
     <hr />
     <section class="timeline">

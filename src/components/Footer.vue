@@ -3,10 +3,9 @@
     <hr />
     <div class="footer__links">
       <a href="#"><span class="logo">George Perez</span></a>
-      <a href="about">About</a>
-      <a href="awards">Awards</a>
-      <a href="history">Career History</a>
-      <a href="interests">Interests</a>
+      <a href="#history">Career History</a>
+      <a href="#awards">Awards</a>
+      <a href="#interests">Interests</a>
     </div>
     <h6 class="copyright">George Perez Copyright 2020</h6>
   </footer>
