@@ -7,6 +7,7 @@
         v-bind:key="index"
         class="stat"
         :class="gray"
+        data-aos="fade-up"
       >
         <span class="stat--number">{{ stat.number }}</span>
         <span class="stat--name">{{ stat.name }}</span>
