@@ -7,7 +7,9 @@
       <a href="#awards">Awards</a>
       <a href="#interests">Interests</a>
     </div>
-    <h6 class="copyright">George Perez Copyright 2020</h6>
+    <h6 class="created">
+      Designed & Developed by <a href="http://tmo.codes">Tyler Morales</a>
+    </h6>
   </footer>
 </template>
 
@@ -43,7 +45,7 @@ export default {}
     }
   }
 
-  .copyright {
+  .created {
     font-size: 12px;
     font-weight: 200;
     text-align: center;
