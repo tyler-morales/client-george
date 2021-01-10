@@ -30,7 +30,7 @@
           </li>
         </ul>
         <button v-on:click="collapsed = !collapsed">
-          {{ collapsed ? 'Show More' : 'Show Less' }}
+          {{ collapsed ? 'Show More +' : 'Show Less -' }}
         </button>
       </div>
     </section>
