@@ -29,7 +29,10 @@
             {{ award }}
           </li>
         </ul>
-        <button v-on:click="collapsed = !collapsed">
+        <button
+          v-on:click="collapsed = !collapsed"
+          aria-label="Toggle to show awards"
+        >
           {{ collapsed ? 'Show More +' : 'Show Less -' }}
         </button>
       </div>

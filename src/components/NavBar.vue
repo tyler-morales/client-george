@@ -3,7 +3,7 @@
     <div class="nav-container">
       <div class="nav">
         <a href="#"><span class="logo">George Perez</span></a>
-        <button @click="isOpen = !isOpen">
+        <button @click="isOpen = !isOpen" aria-label="Open and close menu">
           <svg
             v-if="!isOpen"
             class="menu"
