@@ -8,7 +8,8 @@
       <a href="#interests">Interests</a>
     </div>
     <h3 class="created">
-      Designed & Developed by <a href="http://tmo.codes">Tyler Morales</a>
+      Designed & Developed by
+      <a href="https://tmo.codes/" target="_blank" rel="noreferrer">Tyler Morales</a>
     </h3>
   </footer>
 </template>
