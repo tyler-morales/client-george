@@ -124,14 +124,6 @@ export default {
     li:nth-child(n + 7) {
       display: none;
     }
-    li:nth-child(6),
-    li:nth-child(3) {
-      background: linear-gradient(
-        180deg,
-        rgba(26, 4, 249, 0) 0%,
-        rgba(245, 245, 247, 1) 59%
-      );
-    }
   }
 
   button {
