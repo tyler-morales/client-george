@@ -31,6 +31,7 @@ export default {
 .interests {
   width: 100%;
 }
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -41,6 +42,7 @@ export default {
   @include breakpoint(md) {
     justify-content: center;
   }
+
   @include breakpoint(sm) {
     margin: 30px 0;
   }

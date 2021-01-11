@@ -49,12 +49,6 @@ export default {
         font-size: 36px;
       }
     }
-    &--description {
-    }
-  }
-
-  &--img {
-    max-width: 400px;
   }
 }
 </style>
