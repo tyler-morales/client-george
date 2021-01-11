@@ -22,7 +22,7 @@
 
     <!-- Court Case Btn -->
     <div class="court-cases" data-aos="fade-up">
-      <a :href="history.link" target="_blank">Court Cases</a>
+      <a :href="history.link" target="_blank" rel="noreferrer">Court Cases</a>
       <span>View all court cases from the MN. tax court</span>
     </div>
   </div>
